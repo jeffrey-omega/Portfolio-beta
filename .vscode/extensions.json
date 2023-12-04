@@ -3,6 +3,7 @@
 		"github.vscode-github-actions",
 		"svelte.svelte-vscode",
 		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"ms-playwright.playwright"
 	]
 }
