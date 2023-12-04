@@ -6,7 +6,11 @@ test.describe('index page', () => {
 	});
 
 	test('display video', async ({ page }) => {
+<<<<<<< HEAD
 		await page.waitForLoadState('domcontentloaded');
+=======
+		page.waitForLoadState('domcontentloaded');
+>>>>>>> main
 
 		const video = await page.$('video');
 		expect(video).toBeTruthy();
