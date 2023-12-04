@@ -16,7 +16,6 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="trail">
-		<!-- TODO: fix LightSwitch display issue -->
-		<LightSwitch height="h-4" track="bg-red-800" />
+		<LightSwitch track="bg-red-800" />
 	</svelte:fragment>
 </AppBar>
