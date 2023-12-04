@@ -1,9 +1,17 @@
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-test('index page has expected h1', async ({ page }) => {
-	await page.goto('/');
-	//await expect(page.getByRole('heading', { name: 'Welcome to SvelteKit' })).toBeVisible();
+test.describe('index page', () => {
+	test.beforeEach(async ({ page }) => {
+		await page.goto('/');
+	});
 
-	// generate a screenshot of the page
-	await page.screenshot({ path: 'static/screenshot.png', fullPage: true });
+	test('display video', async ({ page }) => {
+		page.waitForLoadState('domcontentloaded');
+
+		const video = await page.$('video');
+		expect(video).toBeTruthy();
+
+		// generate a screenshot of the page
+		await page.screenshot({ path: 'static/screenshot.png', fullPage: true });
+	});
 });
