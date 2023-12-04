@@ -12,6 +12,7 @@
 	<div id="video" class="tv__right face">
 		<video autoplay loop muted>
 			<source src="videoplayback.webm" type="video/webm" />
+			<source src="videoplayback.mp4" type="video/mp4" />
 		</video>
 	</div>
 	<div class="tv__left face" />
