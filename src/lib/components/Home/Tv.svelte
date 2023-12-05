@@ -10,10 +10,7 @@
 	<div class="tv__front face" />
 	<div class="tv__back face" />
 	<div id="video" class="tv__right face">
-		<video autoplay loop muted>
-			<source src="videoplayback.webm" type="video/webm" />
-			<source src="videoplayback.mp4" type="video/mp4" />
-		</video>
+		<img src="/videoplayback.webp" alt="stream logo" />
 	</div>
 	<div class="tv__left face" />
 	<div class="tv__top face" />
@@ -21,7 +18,7 @@
 </div>
 
 <style lang="scss">
-	video {
+	img {
 		position: relative;
 		width: 100%;
 		height: 100%;
