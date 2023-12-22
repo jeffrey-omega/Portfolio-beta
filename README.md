@@ -8,7 +8,8 @@
 
 # Portfolio-BETA
 
-![screenshot](./static/screenshot.png)
+![screenshot](./static/screenshot-dark.png#gh-dark-mode-only)
+![screenshot](./static/screenshot-light.png#gh-light-mode-only)
 
 ## Description
 
